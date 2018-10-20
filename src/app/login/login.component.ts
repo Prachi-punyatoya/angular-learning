@@ -10,17 +10,20 @@ import {HttpErrorResponse} from '@angular/common/http';
 })
 export class LoginComponent{
   model: any = {};
+  role='dddd';
   constructor(private router: Router,private login_api:LoginApiService) { }
   
   onSubmit() {
     alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.model))
-    this.login_api.login(this.model).subscribe((data:any)=>{
-    console.log(data);
-    },
-    (err:HttpErrorResponse)=>
-    {
+    this.login_api.login(this.model).subscribe(
+      (data:any)=>{
+        console.log(data);
+        this.router.navigate(['home']); 
+      },
+      (err:HttpErrorResponse)=>
+      {
       console.log(err);
-    }
+      }
     )
   }
 

@@ -8,6 +8,7 @@ const headers1=_headers.append('Content-Type','application/json');
 @Injectable()
 export class LoginApiService {
  rootUrl='https://reqres.in'
+ 
   constructor(private http:HttpClient) {}
   
   login(data)
