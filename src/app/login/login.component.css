@@ -2,9 +2,9 @@
 .main-div {
  background-color:rgba(255, 255, 255, .5) ;
  border-radius: 14px;
- margin: -46px auto 150px;
+ margin: 93px auto 150px;
  max-width: 45%;
- padding: 93px 58px 74px 31px;
+ padding: 95px 115px 97px 93px;
 }
 
 body{
@@ -13,7 +13,7 @@ body{
  background-position:center; 
  background-size:cover;
  background-attachment: fixed;
- padding:200px;
+ padding:50px;
  height: 100vh;
  overflow: hidden;
 }

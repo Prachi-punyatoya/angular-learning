@@ -6,10 +6,12 @@
    </div>
    
    
-    <div class="main-div">
-          <h2 class=htop>LOG IN </h2>
-                                
+    <div class="container main-div">
+           
+          <h2 class=htop>VAssist Log In </h2>
+                               
                 <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+                  
                     <div class="form-group">
                         <label for="email" class="login-label">Email</label>
                         <input type="text" class="form-control box" name="email" [(ngModel)]="model.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email />
@@ -31,13 +33,13 @@
                     </div>
                     <br>
                     
-            
                     <div class="form-group">
-                        <button class="btn btn-primary button">Login</button>
+                        <button class="btn btn-success btn-block button">Login</button>
                     </div>
+                
                    </form>
-               
-          </div>
+                  
+               </div>
         
      
 </body>
