@@ -1,20 +1,17 @@
 <!-- main app container -->
 <body>
-   <div>
-        <img src="" alt="logo" style="width:100%">
-
-   </div>
    
-   
-    <div class="container main-div">
+    <section class="container-fluid bg">
+        <section class="row justify-content-center">
+          <section class="col-12 col-sm-6 col-md-3">
            
-          <h2 class=htop>VAssist Log In </h2>
+          
                                
-                <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
-                  
+                <form class="form-container" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+                        <h2 class=htop>VAssist Log In </h2>
                     <div class="form-group">
                         <label for="email" class="login-label">Email</label>
-                        <input type="text" class="form-control box" name="email" [(ngModel)]="model.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email />
+                        <input type="text" class="form-control  box" name="email" [(ngModel)]="model.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email />
                         <div *ngIf="f.submitted && email.invalid" class="invalid-feedback validation-alert">
                             <div *ngIf="email.errors.required">Email is required</div>
                             <div *ngIf="email.errors.email">Email must be a valid email address</div>
@@ -38,9 +35,10 @@
                     </div>
                 
                    </form>
-                  
-               </div>
-        
+                </section>
+            </section>
+        </section>
+              
      
 </body>
 
